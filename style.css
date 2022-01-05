@@ -473,16 +473,23 @@ figcaption span:last-child {
 
 /* Aside */
 
-aside {
+.grid-wrap {
+    align-self: flex-start;
+    position: sticky;
+    top: 1.8rem;
     flex-basis: 20%;
-    padding-top: 1.5rem;
-    padding-left: 0;
+}
+
+aside {
+    
     display: grid;
     width: 100%;
     grid-template-columns: repeat(4, auto);
     grid-template-rows: 2rem repeat(5, 6rem);
     column-gap: 5px;
     row-gap: 5px;
+    padding-top: 1.5rem;
+    padding-left: 0;
     background: white;
     font-weight: 600;
     
